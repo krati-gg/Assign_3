@@ -22,7 +22,8 @@ function onClickFunction_Yellow()
     document.getElementById("box-4").style.color="white";
 }
 function btnUserName_onclick(){
-    console.log( document.getElementById("txtUsername").value)
-    //document.getElementById("custName").innerHTML= "ABC"
-    document.getElementById("custName").innerText = ", " + document.getElementById("txtUsername").value ;
+    let txtName = document.getElementById("txtUsername").value
+    //console.log( document.getElementById("txtUsername").value)00
+    txtName.trim() == "" ? document.getElementById("custName").innerText = "" :document.getElementById("custName").innerText = ", " + txtName;
+    //document.getElementById("custName").innerText = ", " + document.getElementById("txtUsername").value ;
 }
